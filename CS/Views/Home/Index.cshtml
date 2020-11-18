@@ -1,0 +1,35 @@
+<h1>ASP.NET Core Reporting Application</h1>
+<p>This example shows how to create a <a href="https://docs.devexpress.com/XtraReports/4789/detailed-guide-to-devexpress-reporting/provide-interactivity/create-drill-through-reports">drill-through report</a> and open it in the <a href="https://docs.devexpress.com/XtraReports/400268/web-reporting/asp-net-core-reporting/document-viewer/quick-start">Document Viewer</a> using the <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.IDrillThroughProcessorAsync">IDrillThroughProcessorAsync</a> service.</p>
+
+@model DevExpress.XtraReports.Web.WebDocumentViewer.WebDocumentViewerModel;
+<script>
+    function previewClick(s, e) {
+        var brick = e.Brick;
+        var navigationUrl = brick && brick.navigation && brick.navigation.url;
+        if(navigationUrl && ["back", "details"].indexOf(navigationUrl) >= 0) {
+            var reportPreview = s.GetReportPreview();
+            var navigateInfo = {
+                NavigateTo: navigationUrl,
+                MasterID: e.GetBrickValue(),
+            };
+            reportPreview.drillThrough(JSON.stringify(navigateInfo));
+            e.Handled = true;
+        }
+    }
+</script>
+@{
+    var viewerRender = Html.DevExpress().WebDocumentViewer("DocumentViewer")
+        .Height("800px")
+        .ClientSideEvents(configure => configure.PreviewClick("previewClick"))
+        .Bind(Model);
+    @viewerRender.RenderHtml()
+}
+
+@section Scripts {
+    <link href="~/css/dx-reporting-skeleton-screen.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
+    <script src="~/js/reporting.thirdparty.bundle.js"></script>
+    <script src="~/js/viewer.part.bundle.js"></script>
+
+    @viewerRender.RenderScripts()
+}

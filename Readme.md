@@ -1,5 +1,3 @@
-ASP.NET Core Async Drill Through
-
 # Web Reporting - How to create drill-through reports
 
 ## Overview 

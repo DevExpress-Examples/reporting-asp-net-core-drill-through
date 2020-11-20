@@ -2,7 +2,7 @@
 
 ## Overview 
 
-This example shows how to add drill-through functionality to [DevExpress Reports](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport). 
+The example shows how to add drill-through functionality to [DevExpress Reports](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport). 
 A drill-through report allows users to click a report element (it can be a text or an image) and open another report with the same [viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer). 
 
 In this example, a user clicks the "Show Details" [label](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRLabel) in the main report, and the [Web Document Viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer) displays a detailed report associated with the clicked item. The detailed report contains a ‘back’ button (actually it is an [image](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRPictureBox)) that navigates back to the master report. 

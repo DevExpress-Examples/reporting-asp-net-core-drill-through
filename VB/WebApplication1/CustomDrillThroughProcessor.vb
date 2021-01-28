@@ -6,7 +6,7 @@ Namespace WebApplication1
 	Public Class CustomDrillThroughProcessor
 		Implements IWebDocumentViewerDrillThroughProcessor
 
-		Public Function CreateReport(ByVal context As DrillThroughContext) As XtraReport
+		Public Function CreateReport(ByVal context As DrillThroughContext) As XtraReport Implements IWebDocumentViewerDrillThroughProcessor.CreateReport
 			If context.CustomData = "#back" Then
 				Return New MainReport()
 			End If

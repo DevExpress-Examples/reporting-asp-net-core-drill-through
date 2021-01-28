@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * **[CustomDrillThroughProcessor.cs](./CS/WebApplication1/CustomDrillThroughProcessor.cs) (VB: [CustomDrillThroughProcessor.vb](./VB/WebApplication1/CustomDrillThroughProcessor.vb))**
-* [Global.asax.cs](./CS/WebApplication1/Global.asax.cs) (VB: [Global.asax.cs](./VB/WebApplication1/Global.asax.cs))
+* [Global.asax.cs](./CS/WebApplication1/Global.asax.cs) (VB: [Global.asax.vb](./VB/WebApplication1/Global.asax.vb))
 * [WebForm1.aspx](./CS/WebApplication1/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/WebApplication1/WebForm1.aspx))
 * [WebForm1.aspx.cs](./CS/WebApplication1/WebForm1.aspx.cs)
 <!-- default file list end -->

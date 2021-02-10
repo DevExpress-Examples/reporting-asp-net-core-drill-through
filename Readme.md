@@ -1,5 +1,8 @@
 # Web Reporting - How to create drill-through reports
 
+This project targets ASP.NET Core (MVC Razor Pages). 
+To learn how to implement a drill-through report for ASP.NET Web Forms, select the `17.1.3+` branch.
+
 ## Overview 
 
 The example shows how to add drill-through functionality to [DevExpress Reports](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport). 

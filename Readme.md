@@ -111,9 +111,9 @@ using DevExpress.XtraReports.Services;
 
 ## Files to  Review
 
-- [Index.cshtml](Views\Home\Index.cshtml) 
-- [CustomDrillThroughProcessorAsync.cs](Services\CustomDrillThroughProcessorAsync.cs)
-- [CustomReportProviderAsync.cs](Services\CustomReportProviderAsync.cs)
+- [Index.cshtml](Views/Home/Index.cshtml) 
+- [CustomDrillThroughProcessorAsync.cs](Services/CustomDrillThroughProcessorAsync.cs)
+- [CustomReportProviderAsync.cs](Services/CustomReportProviderAsync.cs)
 - [Startup.cs](Startup.cs)
 ## Documentation
 

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using DevExpress.XtraReports.Services;
 using DevExpress.XtraReports.Web.WebDocumentViewer;
 
-namespace ASPNETCoreHowToCreateDrillDownReports.Services {
+namespace ASPNETCoreCreateDrillThroughReports.Services {
     public class NavigateInfo {
         public string NavigateTo { get; set; }
         public string MasterID { get; set; }

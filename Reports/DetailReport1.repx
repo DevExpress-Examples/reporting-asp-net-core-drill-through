@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="23.1.5.0" Ref="1" ControlType="ASPNETCoreHowToCreateDrillDownReports.Details, ASPNETCoreHowToCreateDrillDownReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="DetailReport1" PageWidth="850" PageHeight="1100" Version="23.1" DataMember="Products" DataSource="#Ref-0">
+<XtraReportsLayoutSerializer SerializerVersion="23.1.5.0" Ref="1" ControlType="ASPNETCoreCreateDrillThroughReports.Details, ASPNETCoreCreateDrillThroughReports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="DetailReport1" PageWidth="850" PageHeight="1100" Version="23.1" DataMember="Products" DataSource="#Ref-0">
   <Parameters>
     <Item1 Ref="3" Visible="false" Description="Parameter1" ValueInfo="0" Name="categoryID" Type="#Ref-2" />
     <Item2 Ref="5" Visible="false" Description="Parameter1" Name="categoryName" />

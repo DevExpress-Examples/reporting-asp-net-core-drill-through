@@ -5,7 +5,7 @@ using DevExpress.XtraReports.Services;
 using DevExpress.XtraReports.UI;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ReportingAppAsyncServices.Services {
+namespace ASPNETCoreCreateDrillThroughReports.Services {
     public class CustomReportProviderAsync : IReportProviderAsync {
         public const string MyReportsDirectoryName = "Reports";
         readonly IWebHostEnvironment env;

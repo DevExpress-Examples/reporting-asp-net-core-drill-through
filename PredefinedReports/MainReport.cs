@@ -1,7 +1,7 @@
 using System;
 using DevExpress.XtraReports.UI;
 
-namespace ASPNETCoreHowToCreateDrillDownReports
+namespace ASPNETCoreCreateDrillThroughReports
 {
     public partial class MainReport
     {

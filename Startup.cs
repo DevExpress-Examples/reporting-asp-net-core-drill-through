@@ -1,19 +1,17 @@
 using System;
 using System.IO;
-using ASPNETCoreHowToCreateDrillDownReports.Services;
+using ASPNETCoreCreateDrillThroughReports.Services;
 using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
 using DevExpress.XtraReports.Services;
-using DevExpress.XtraReports.Web.WebDocumentViewer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ReportingAppAsyncServices.Services;
 
-namespace ASPNETCoreHowToCreateDrillDownReports {
+namespace ASPNETCoreCreateDrillThroughReports {
     public class Startup {
         public Startup(IConfiguration configuration, IWebHostEnvironment hostingEnvironment) {
             Configuration = configuration;
@@ -35,7 +33,6 @@ namespace ASPNETCoreHowToCreateDrillDownReports {
                 configurator.UseAsyncEngine();
             });
             services.AddScoped<IReportProviderAsync, CustomReportProviderAsync>();
-            services.AddScoped<IDrillThroughProcessorAsync, CustomDrillThroughProcessorAsync>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +44,7 @@ namespace ASPNETCoreHowToCreateDrillDownReports {
             });
             app.UseDevExpressControls();
 
-            if (!Directory.Exists(CustomReportProviderAsync.MyReportsDirectoryName))
+            if(!Directory.Exists(CustomReportProviderAsync.MyReportsDirectoryName))
                 Directory.CreateDirectory(CustomReportProviderAsync.MyReportsDirectoryName);
             foreach(var report in PredefinedReports.ReportsFactory.Reports) {
                 report.Value().SaveLayoutToXml(Path.Combine(env.ContentRootPath, CustomReportProviderAsync.MyReportsDirectoryName, report.Key + ".repx"));

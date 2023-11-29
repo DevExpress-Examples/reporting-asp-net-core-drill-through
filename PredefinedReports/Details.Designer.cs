@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ASPNETCoreHowToCreateDrillDownReports {
+namespace ASPNETCoreCreateDrillThroughReports {
     
     public partial class Details : DevExpress.XtraReports.UI.XtraReport {
         private void InitializeComponent() {
-            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "ASPNETCoreHowToCreateDrillDownReports.PredefinedReports.Details.repx");
+            DevExpress.XtraReports.ReportInitializer reportInitializer = new DevExpress.XtraReports.ReportInitializer(this, "ASPNETCoreCreateDrillThroughReports.PredefinedReports.Details.repx");
 
             // Controls
             this.Detail = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail");

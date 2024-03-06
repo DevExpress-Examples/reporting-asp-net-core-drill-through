@@ -12,9 +12,6 @@ A drill-through report allows users to click a report element (it can be a text 
 
 In this example, a user clicks the "Show Details" [label](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRLabel) in the main report, and the [Web Document Viewer](https://docs.devexpress.com/XtraReports/400248/web-reporting/asp-net-core-reporting/document-viewer) displays a detailed report associated with the clicked item. The detailed report contains a ‘back’ button (actually it is an [image](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRPictureBox)) that navigates back to the master report. 
 
-![](https://hackmd.devexpress.devx/uploads/upload_933051a1a6d5bb9abc047b66c75e82a5.gif)
-
-
 ## Implementation Details 
 
 A click in the report triggers a client-side [PreviewClick](https://docs.devexpress.com/XtraReports/DevExpress.AspNetCore.Reporting.WebDocumentViewer.WebDocumentViewerClientSideEventsBuilder.PreviewClick(System.String)) event. In this event handler, obtain information about a clicked element and pass it to the `drillThrough` method of a report preview. This client method accesses the server-side [IDrillThroughProcessorAsync](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.IDrillThroughProcessorAsync) service and calls its [CreateReportAsync](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Web.WebDocumentViewer.IDrillThroughProcessorAsync.CreateReportAsync(DevExpress.XtraReports.Web.WebDocumentViewer.DrillThroughContext)) method. 

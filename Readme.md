@@ -1,5 +1,4 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128602993/2023.2)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T483368)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
@@ -9,8 +8,8 @@ This example demonstrates a [drill-through report](https://docs.devexpress.com/X
 
 ## Files to  Review
 
-* Main report: [XtraReportCategories.cs](./PredefinedReports/XtraReportCategories.cs) 
-* Detail report: [XtraReportProducts.cs](./PredefinedReports/XtraReportProducts.cs)
+* Main report: [XtraReportCategories.cs](./CS/PredefinedReports/XtraReportCategories.cs) 
+* Detail report: [XtraReportProducts.cs](./CS/PredefinedReports/XtraReportProducts.cs)
 
 ## Documentation
 

@@ -22,7 +22,7 @@ This example illustrates how to provide navigation between different reports so 
 Note: This project targets ASP.NET Web Forms. To learn how to implement a drill-through report for an ASP.NET Core application, select the 2020.2 branch.
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-drill-through&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-drill-through&~~~was_helpful=no)
 

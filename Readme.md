@@ -126,7 +126,7 @@ using DevExpress.XtraReports.Services;
 - [Reporting for WinForms - How to Create Drill-through Report](https://github.com/DevExpress-Examples/reporting-winforms-drill-through)
 - [Reporting for WPF - How to Create Drill-through Report](https://github.com/DevExpress-Examples/reporting-wpf-drill-through)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-drill-through&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-asp-net-core-drill-through&~~~was_helpful=no)
 
